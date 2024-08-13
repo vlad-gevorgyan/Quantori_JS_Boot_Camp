@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+  margin-right: 18.3vw;
+  margin-top: 2.5vw;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 7vw;
+  height: 3vw;
+  color: #66837e;
+  font-size: 1.14vw;
+  text-decoration: none;
+  border-top: 0.1vw solid;
+  border-bottom: 0.1vw solid;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.item:first-child {
+  border-left: 0.1vw solid;
+  border-radius: 5vw 0 0 5vw;
+}
+
+.item:last-child {
+  border-right: 0.1vw solid;
+  border-radius: 0 5vw 5vw 0;
+}
+
+.active {
+  color: white;
+  background-color: #66837e;
+}

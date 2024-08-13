@@ -1,0 +1,144 @@
+.nav {
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 25vw;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  margin-top: -2vw;
+}
+
+.navbarBrand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  z-index: 50;
+  margin: auto;
+  margin-top: 5.56vw;
+  margin-bottom: 5.56vw;
+}
+
+.navbarLogo {
+  width: 10vw;
+  height: 12.5vw;
+}
+
+.iconburger {
+  color: #66837e;
+  width: 13vw;
+  height: 13vw;
+  transition: transform 0.3s ease;
+}
+
+.open .iconburger {
+  transform: rotate(90deg);
+}
+
+.icon {
+  color: #66837e;
+  width: 13vw;
+  height: 13vw;
+}
+
+.navbarToggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger {
+  width: 10vw;
+  height: 10vw;
+}
+
+.navbarLinks {
+  display: none;
+  transition: height 0.3s ease;
+}
+
+.navbarLinks.active {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  background-color: white;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  border-top: 0.28vw solid #143E59;
+  width: 85.55vw;
+  padding: 3.34vw 5.56vw;
+  font-weight: 600;
+  color: #66837e;
+  font-size: 5.56vw;
+  text-decoration: none;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 3.33vw; 
+}
+
+.item:hover {
+  color: black;
+}
+
+.item.active {
+  color: #EBEBEB;
+  text-decoration: none;
+  border-color: #EBEBEB; 
+}
+
+
+.active {
+  color: #EBEBEB;
+}
+
+.navbarBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+
+.logBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 5.56vw;
+  text-decoration: none;
+  width: 50vw;
+  height: 10vw;
+  color: #66837e;
+  background-color: white;
+  border: 0.1vw solid #66837e;
+  border-radius: 2vw;
+}
+
+.logIn:hover {
+  color: white;
+  background-color: #66837e;
+}
+
+
+.profileImage {
+  margin-top: -1vw;
+  width: 15vw;
+  height: 15vw;
+}
+
+.userContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 600;
+  font-size: 7vw;
+  color: #66837e;
+  margin-bottom: 4vw;
+}

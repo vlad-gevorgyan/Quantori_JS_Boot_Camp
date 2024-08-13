@@ -1,0 +1,49 @@
+.wapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+
+.Background {
+  position: relative;
+  margin-top: 2vw;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  background-color: #33475e;
+  margin: -1vw auto;
+}
+
+.footer p {
+  font-weight: 600;
+  color: white;
+  font-size: 1vw;
+  margin-right: 2vw;
+}
+
+@media (max-width: 480px) {
+  .BackgroundMob {
+    position: relative;
+    margin-top: 25vw;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .footer p {
+    font-weight: 600;
+    color: white;
+    font-size: 3vw;
+    margin-right: 5vw;
+  }
+
+}
